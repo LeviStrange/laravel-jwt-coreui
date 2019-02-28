@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Card, CardBody, CardGroup, Col, Container, Form, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap';
+import PropTypes from 'prop-types'
+import ReeValidate from 'ree-validate'
+import { AuthService } from '../../../services'
 
 class Login extends Component {
   render() {

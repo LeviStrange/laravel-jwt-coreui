@@ -4,6 +4,11 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 import Loadable from 'react-loadable';
 import './App.scss';
 
+import store from './store'
+import * as action from './store/actions'
+
+// store.dispatch( action.authCheck() );
+
 const loading = () => <div className="animated fadeIn pt-3 text-center">Loading...</div>;
 
 // Containers
