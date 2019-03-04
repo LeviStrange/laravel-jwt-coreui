@@ -6,6 +6,8 @@ import './App.scss';
 
 import store from './store'
 import * as action from './store/actions'
+// import Login from './views/Pages/Login';
+
 
 // store.dispatch( action.authCheck() );
 
