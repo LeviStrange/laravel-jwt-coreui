@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
+import {Provider} from 'react-redux';
 // import { renderRoutes } from 'react-router-config';
 import Loadable from 'react-loadable';
 import './App.scss';
 
-import store from './store'
-import * as action from './store/actions'
-// import Login from './views/Pages/Login';
+import store from './store';
+import * as action from './store/actions';
 
-
-// store.dispatch( action.authCheck() );
+store.dispatch( action.authCheck() );
 
 const loading = () => <div className="animated fadeIn pt-3 text-center">Loading...</div>;
 
@@ -19,7 +18,7 @@ const DefaultLayout = Loadable({
   loading
 });
 
-// Pages
+//Pages
 const Login = Loadable({
   loader: () => import('./views/Pages/Login'),
   loading
@@ -44,6 +43,7 @@ class App extends Component {
 
   render() {
     return (
+      <Provider store={store}>
       <HashRouter>
           <Switch>
             <Route exact path="/login" name="Login Page" component={Login} />
@@ -53,6 +53,7 @@ class App extends Component {
             <Route path="/" name="Home" component={DefaultLayout} />
           </Switch>
       </HashRouter>
+      </Provider>
     );
   }
 }

@@ -18,6 +18,7 @@ import {
 import navigation from '../../_nav';
 // routes config
 import routes from '../../routes';
+import AuthService from '../../services'
 
 const DefaultAside = React.lazy(() => import('./DefaultAside'));
 const DefaultFooter = React.lazy(() => import('./DefaultFooter'));
@@ -29,7 +30,10 @@ class DefaultLayout extends Component {
 
   signOut(e) {
     e.preventDefault()
-    this.props.history.push('/login')
+    // is_admin, jwt_token, persist:root
+    // localStorage.removeItem();
+    localStorage.clear()
+    // this.props.history.push('/login')
   }
 
   render() {

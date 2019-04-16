@@ -7,6 +7,7 @@ export function authLogin(payload){
     }
 }
 
+
 export function authLogout(){
     return {
         type: ActionTypes.AUTH_LOGOUT
