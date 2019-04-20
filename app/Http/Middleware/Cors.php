@@ -13,7 +13,7 @@ class Cors
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle($request, Closure $next)
+     public function handle($request, Closure $next)
     {
         if (getenv('APP_ENV') == 'production'){
             return $next($request);
@@ -23,4 +23,5 @@ class Cors
         header('Access-Control-Allow-Headers: Content-Type, Accept, Authorization, X-Requested-With, Application, X-CSRF-TOKEN');
         return $next($request);
     }
+        
 }
