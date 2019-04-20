@@ -1,5 +1,5 @@
-# react-laravel-with-jwt-authentication
-Boilerplate for reactjs (15.6) and laravel (5.5) with jwt-authentication.  0 
+# Vibe New Media and Vaux.
+Reactjs (15.6) and laravel (5.5) with jwt-authentication.
 
 # usage :
 1. Rename .env.example to .env
@@ -8,23 +8,10 @@ Boilerplate for reactjs (15.6) and laravel (5.5) with jwt-authentication.  0
    - composer update
    - Php artisan key:generate
    - php artisan migrate
-4. npm install
-5. npm run dev
+4. php artisan serve --port==8080
+4. cd /frontend 
+5. npm install
+6. npm run start
 
-# features:
-This repository already configured with:
-- Semantic UI React => https://react.semantic-ui.com/introduction
-- Animate css => https://daneden.github.io/animate.css/
-- Redux persist (For local storage) => https://www.npmjs.com/package/redux-persist
-- Socialite => (https://laravel.com/docs/5.5/socialite)
 
-# To-Do list :
-- User registration => Done
-- User login  => Done
-- Forgot password => Done
-- Limit login attempts
-- social login => Done (Facebook, Twitter, LinkedIn, Google)
 
-This project is open for contribution.
-
-For any suggestion and query contact me at : sumityadavbadli@gmail.com
