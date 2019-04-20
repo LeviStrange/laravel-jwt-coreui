@@ -1,4 +1,4 @@
-# Vibe New Media and Vaux.
+# CoreUI React & Laravel Template.
 Reactjs (15.6) and laravel (5.5) with jwt-authentication.
 
 # usage :
