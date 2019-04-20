@@ -8,9 +8,10 @@ Reactjs (15.6) and laravel (5.5) with jwt-authentication.
    - composer update
    - Php artisan key:generate
    - php artisan migrate
+4. php artisan serve --port==8000
 4. cd /frontend 
 5. npm install
-6. npm run dev
+6. npm run start
 
 
 
