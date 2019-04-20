@@ -325,19 +325,10 @@ class UsersTableSeeder extends Seeder
     }
 	public function create_users()
     {
-		$this->create_user('Mary June','maryjune@gmail.com','password','super-admin', 'publish');
-        $this->create_user('Harry Patter','harrypatter@gmail.com','password','guest-user', 'publish');
-        $this->create_user('Levi Strange','levi.strange@clickon.co','password','super-admin', 'publish');
-        $this->create_user('Juha-Pekka Ylisela','juha-pekka.ylisela@clickon.co','password','general-user', 'publish');
-        $this->create_user('Richard Wilson','richard.wilson@clickon.co','password','super-admin', 'publish');
-        $this->create_user('Farris Salah','farris.salah@clickon.co','password','super-admin', 'publish');
-        $this->create_user('Phil Trevillion','phillip.trevillion@clickon.co','password','admin', 'publish');
-        $this->create_user('Einar Randall','EinarRandall@gmail.com','password','guest-user', 'publish');
-        $this->create_user('Chetan Mohamed','ChetanMohamed@gmail.com','password','basic-user', 'publish');
-        $this->create_user('Derick Maximinus','DerickMaximinus@gmail.com','password','general-user', 'publish');
-        $this->create_user('Adrian Goris','adrian.goris@clickon.co','password','admin', 'publish');
-        $this->create_user('Iwan Owen','IwanOwen@fakeAgency.com','password','external-basic-user', 'publish');
-        $this->create_user('Maria Bennett','MariaBennett@fakeAgency.com','password','external-general-user', 'publish');
-        $this->create_user('Donald Glover','DonaldGlover@fakeAgency.com','password','external-pro-user', 'publish');
+
+		$this->create_user('Levi Strange','levi@vibenewmedia.uk','password','super-admin', 'publish');
+        $this->create_user('Justin Gluck','justin@vibenewmedia.uk','password','super-admin', 'publish');
+        $this->create_user('Mary Jane','support_user@vibenewmedia.uk','password','support', 'publish');
+        $this->create_user('John Doe','general_user@vibenewmedia.uk','password','general', 'publish');
     }
 }

@@ -11,7 +11,7 @@ export function login(credentials) {
                     return resolve();
                 })
                 .catch(err => {
-                    const statusCode = 401;
+                    const statusCode = err.response.status;
                     const data = {
                         error: null,
                         statusCode,
@@ -19,7 +19,7 @@ export function login(credentials) {
                     if (statusCode === 401 || statusCode === 422) {
                         // status 401 means unauthorized
                         // status 422 means unprocessable entity
-                        // data.error = err.response.data.message;
+                        data.error = err.response.data.message;
                     }
                     return reject(data);
                 })
